@@ -20,6 +20,50 @@ html {
 }
 
 
+
+@import url('https://fonts.googleapis.com/css?family=Sarabun');
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+
+.container1 {
+  width: 25rem;
+  height: 100%;
+  margin: 0 1rem;
+  position: relative;
+}
+
+.searchbar {
+  font-size: 1.4rem;
+  width: 15rem;
+  height: 4rem;
+  border: none;
+  outline: none;
+  border-radius: 10rem;
+  box-shadow: 0 1rem 2rem rgba(black, .1);
+  padding: 2rem;
+
+  transition: all .2s;
+  transition-delay: .1s;
+}
+
+.searchbar:hover {
+  width: 27rem;
+  height: 4rem;
+}
+
+
+
+.searchbar::placeholder {
+  opacity: .5;
+}
+
 /* ---------------------------container -------------------------*/
 .container {
   position: relative;
@@ -352,6 +396,7 @@ p {
 .photo-tags a:hover, .photo-tags a:focus {
   color: #e37544;
 }
+
 
 
 @media screen and (max-width: 700px) {
