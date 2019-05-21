@@ -397,4 +397,8 @@ p {
   .circle{
     display: none;
 }
+.photo-details {
+  width: 200%;
+}
+
 }
