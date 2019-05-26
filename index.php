@@ -10,7 +10,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=Edge">
     <meta name="viewport" id="viewport" content="width=device-width,initial-scale=1">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>黑月 / WorkShop</title>
+    <title>黑月 / WorkShop1</title>
     <meta name="description" content="这里是黑月制作的守望先锋地图工坊代码分享地~">
     <meta name="keywords" content="守望先锋 OW 地图工坊 守望先锋地图工坊 自定义 分享">
     <link rel="stylesheet" href="css/style.css">
@@ -48,14 +48,12 @@
 
     <div class="container">
         <?php
-        $con=mysqli_connect("149.129.63.198", "root", "zlx7895123")or die("canot connect server");
+        $con=mysqli_connect("localhost", "root", "zlx7895123")or die("canot connect server");
         mysqli_select_db($con,"owwp")or die("cannot select DB");   
-        mysqli_set_charset($con,"UTF8");     
-        $sql = "SELECT * FROM owwp ";
+        mysqli_set_charset($con,"UTF8");  
+        $sql = "SELECT * FROM codes";
                 //执行SQL语句
-
         $result=mysqli_query($con,$sql);
-        
         while ($row = mysqli_fetch_assoc($result)){
             echo '<div class="infro">';
             echo'<div class="photo-card">';
